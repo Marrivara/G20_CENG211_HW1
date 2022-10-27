@@ -8,24 +8,25 @@ public class FileReader {
 
     private String[] customers;
     private String[] products;
-
     private String[] sales;
 
 
     public String[] getCustomersFromFile(){
 
         try {
-            BufferedReader reader = new BufferedReader(new java.io.FileReader("src/Customers.csv"));
             String line;
             int lengthOfFile;
 
-            lengthOfFile = getLengthOfFile("src/Customers.csv");
+            //Take the file from path
+            BufferedReader reader = new BufferedReader(new java.io.FileReader("src/Customers.csv"));
 
+            //Get the number of lines in the file and create the array with that size
+            lengthOfFile = getLengthOfFile("src/Customers.csv");
             customers = new String[lengthOfFile];
 
+            //Put each line as one String element in customers array
             for (int i = 0; i<lengthOfFile; i++) {
                 customers[i] = reader.readLine();
-
             }
 
         } catch (FileNotFoundException e) {
@@ -42,14 +43,17 @@ public class FileReader {
 
     public String[] getProductsFromFile(String path){
         try {
-            BufferedReader reader = new BufferedReader(new java.io.FileReader(path));
             String line;
             int lengthOfFile;
 
-            lengthOfFile = getLengthOfFile(path);
+            //Take the file from path
+            BufferedReader reader = new BufferedReader(new java.io.FileReader(path));
 
+            //Get the number of lines in the file and create the array with that size
+            lengthOfFile = getLengthOfFile(path);
             products = new String[lengthOfFile];
 
+            //Put each line as one String element in products array
             for (int i = 0; i<lengthOfFile; i++) {
                 products[i] = reader.readLine();
 
@@ -66,14 +70,17 @@ public class FileReader {
 
     public String[] getSalesFromFile(String path){
         try {
-            BufferedReader reader = new BufferedReader(new java.io.FileReader(path));
             String line;
             int lengthOfFile;
 
-            lengthOfFile = getLengthOfFile(path);
+            //Take the file from path
+            BufferedReader reader = new BufferedReader(new java.io.FileReader(path));
 
+            //Get the number of lines in the file and create the array with that size
+            lengthOfFile = getLengthOfFile(path);
             sales = new String[lengthOfFile];
 
+            //Put each line as one String element in sales array
             for (int i = 0; i<lengthOfFile; i++) {
                 sales[i] = reader.readLine();
 
@@ -96,8 +103,11 @@ public class FileReader {
 
         try {
             BufferedReader reader = new BufferedReader(new java.io.FileReader(path));
+
+            //Pass the first element
             String lineCounter = reader.readLine();
 
+            //If line is not empty add one to length
             while(lineCounter != null) {
                 lenght++;
                 lineCounter = reader.readLine(); }

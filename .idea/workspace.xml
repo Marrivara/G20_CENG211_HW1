@@ -6,40 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fbafbd02-92f7-42ba-97da-080d53313fc6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/Customers.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/DropshippingApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/ReadCSVFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/S1_Products.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/S1_Sales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/S2_Products.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/S2_Sales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/S3_Products.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/S3_Sales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/Sales.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/SalesManagement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/bin/Supplier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/Customers.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/DropshippingApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/ReadCSVFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/S1_Products.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/S1_Sales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/S2_Products.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/S2_Sales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/S3_Products.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/S3_Sales.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/Sales.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/SalesManagement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/G20_CENG211_HW1/src/Supplier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customers.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DropshippingApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadCSVFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sales.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusinessLayer/DropShippingAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessLayer/DropShippingAppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusinessLayer/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessLayer/Sales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusinessLayer/SalesManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessLayer/SalesManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DropShippingApp/DropShippingApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DropShippingApp/DropShippingApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileIO/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileIO/FileReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +29,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/berka/Downloads/First/G20_CENG211_HW1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/berka/Downloads/First/G20_CENG211_HW1&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\berka\Downloads\First\G20_CENG211_HW1\src" />

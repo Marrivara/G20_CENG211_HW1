@@ -14,6 +14,7 @@ public class Sales {
         this.customer = customer;
         this.product = product;
         this.salesDate = salesDate;
+        //calculate the salesPrice through formula
         this.salesPrice =this.product.getPrice() + (this.product.getRate()/(5.0 * 100) * this.product.getNumberOfReviews());
 
     }

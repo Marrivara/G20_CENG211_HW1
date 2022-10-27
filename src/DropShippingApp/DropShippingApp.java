@@ -2,7 +2,7 @@ package DropShippingApp;
 /*
 * Change SalesDate type from String to Date
 * Write Comments
-*
+* Delete toString methods
 *
 * */
 
