@@ -5,43 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class FileReader {
+    private String[] stringsFromFiles;
 
-    private String[] customers;
-    private String[] products;
-    private String[] sales;
-
-
-    public String[] getCustomersFromFile(){
-
-        try {
-            String line;
-            int lengthOfFile;
-
-            //Take the file from path
-            BufferedReader reader = new BufferedReader(new java.io.FileReader("src/Customers.csv"));
-
-            //Get the number of lines in the file and create the array with that size
-            lengthOfFile = getLengthOfFile("src/Customers.csv");
-            customers = new String[lengthOfFile];
-
-            //Put each line as one String element in customers array
-            for (int i = 0; i<lengthOfFile; i++) {
-                customers[i] = reader.readLine();
-            }
-
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occured (FileNotFoundException");
-        } catch (IOException e) {
-            System.out.println("An error occured (IOException");
-        }
-
-
-        return customers;
-    }
-
-
-
-    public String[] getProductsFromFile(String path){
+    public String[] getDatasFromFile(String path){
         try {
             String line;
             int lengthOfFile;
@@ -51,11 +17,11 @@ public class FileReader {
 
             //Get the number of lines in the file and create the array with that size
             lengthOfFile = getLengthOfFile(path);
-            products = new String[lengthOfFile];
+            stringsFromFiles = new String[lengthOfFile];
 
             //Put each line as one String element in products array
             for (int i = 0; i<lengthOfFile; i++) {
-                products[i] = reader.readLine();
+                stringsFromFiles[i] = reader.readLine();
 
             }
 
@@ -65,9 +31,9 @@ public class FileReader {
             System.out.println("An error occured (IOException");
         }
 
-        return products;
+        return stringsFromFiles;
     }
-
+/*
     public String[] getSalesFromFile(String path){
         try {
             String line;
@@ -96,7 +62,39 @@ public class FileReader {
     }
 
 
+*/
+       /*
 
+        public String[] getCustomersFromFile(){
+
+            try {
+                String line;
+                int lengthOfFile;
+
+                //Take the file from path
+                BufferedReader reader = new BufferedReader(new java.io.FileReader("src/Customers.csv"));
+
+                //Get the number of lines in the file and create the array with that size
+                lengthOfFile = getLengthOfFile("src/Customers.csv");
+                stringsFromFiles = new String[lengthOfFile];
+
+                //Put each line as one String element in customers array
+                for (int i = 0; i<lengthOfFile; i++) {
+                    stringsFromFiles[i] = reader.readLine();
+                }
+
+            } catch (FileNotFoundException e) {
+                System.out.println("An error occured (FileNotFoundException");
+            } catch (IOException e) {
+                System.out.println("An error occured (IOException");
+            }
+
+
+            return stringsFromFiles;
+        }
+
+
+    */
 
     public int getLengthOfFile(String path){
         int lenght = 0;

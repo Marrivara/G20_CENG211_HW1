@@ -8,8 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BusinessLayer/DropShippingAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessLayer/DropShippingAppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BusinessLayer/Sales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessLayer/Sales.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusinessLayer/SalesManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessLayer/SalesManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DropShippingApp/DropShippingApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DropShippingApp/DropShippingApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileIO/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileIO/FileReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

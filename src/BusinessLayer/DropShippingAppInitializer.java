@@ -40,6 +40,7 @@ public class DropShippingAppInitializer {
             for(int index = 0; index < sales.length; index++){
                 //Put sales in salesManagement Class
                 salesManagement.setSales(sales[index],i,index);
+                System.out.println(salesManagement.getSales(i,index));
             }
         }
 
@@ -54,7 +55,7 @@ public class DropShippingAppInitializer {
     private Customer[] setCustomerArray(){
         //Put customers to customersFromFile array
         FileReader file = new FileReader();
-        String[] customersFromFile = file.getCustomersFromFile();
+        String[] customersFromFile = file.getDatasFromFile("src/Customers.csv");
 
         //The array that we are going to return
         Customer[] customers = new Customer[customersFromFile.length];
@@ -70,7 +71,7 @@ public class DropShippingAppInitializer {
     private Product[] setProductArray(String path){
         //Put products to productsFromFile array
         FileReader file = new FileReader();
-        String[] productsFromFile = file.getProductsFromFile(path);
+        String[] productsFromFile = file.getDatasFromFile(path);
 
         //The array that we are going to return
         Product[] products = new Product[productsFromFile.length];
@@ -87,7 +88,7 @@ public class DropShippingAppInitializer {
     private Sales[] setSalesArray(String path, Product[] products) {
         //Put sales to salesFromFile array
         FileReader file = new FileReader();
-        String[] salesFromFile = file.getSalesFromFile(path);
+        String[] salesFromFile = file.getDatasFromFile(path);
 
         //The array that we are going to return
         sales = new Sales[salesFromFile.length - 1];
