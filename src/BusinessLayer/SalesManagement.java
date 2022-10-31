@@ -11,8 +11,11 @@ public class SalesManagement {
         this.sales[row][col] = sales;
     }
 
+    public int getSalesLength(){
+        return sales.length;
+    }
     public SalesManagement() {
-        this.sales = new Sales[100][100];
+        this.sales = new Sales[3][40];
     }
 
 }

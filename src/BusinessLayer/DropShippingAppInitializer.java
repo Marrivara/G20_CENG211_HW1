@@ -27,11 +27,6 @@ public class DropShippingAppInitializer {
             suppliers[i] = new Supplier(setProductArray(pathsToProductsFiles[i]));
         }
 
-//        suppliers[0] = new Supplier(setProductArray("src/S1_Products.csv"));
-//        suppliers[1] = new Supplier(setProductArray("src/S2_Products.csv"));
-//        suppliers[2] = new Supplier(setProductArray("src/S3_Products.csv"));
-
-
         SalesManagement salesManagement = new SalesManagement();
 
         //Call the method that brings the sales and put them in an array
@@ -40,14 +35,13 @@ public class DropShippingAppInitializer {
             for(int index = 0; index < sales.length; index++){
                 //Put sales in salesManagement Class
                 salesManagement.setSales(sales[index],i,index);
-                System.out.println(salesManagement.getSales(i,index));
+                sales[index].getCustomer().increaseNumberOfPurchases();
+                //System.out.println(salesManagement.getSales(i,index).getCustomer().toString());
             }
         }
 
-//        setSalesArray("src/S1_Sales.csv",suppliers[0].getProducts());
-//        setSalesArray("src/S2_Sales.csv",suppliers[1].getProducts());
-//        setSalesArray("src/S3_Sales.csv",suppliers[2].getProducts());
-
+        SalesQuery salesQuery = new SalesQuery(salesManagement);
+        salesQuery.calculateTheOutputs();
     }
 
 

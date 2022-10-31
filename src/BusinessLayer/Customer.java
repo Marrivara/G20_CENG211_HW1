@@ -6,6 +6,7 @@ public class Customer {
     private String email;
     private String country;
     private String address;
+    private int numberOfPurchases = 0;
 
     public Customer(String id, String name, String email, String country, String address) {
         this.id = id;
@@ -23,9 +24,13 @@ public class Customer {
                 ", email='" + email + '\'' +
                 ", country='" + country + '\'' +
                 ", address='" + address + '\'' +
+                ", numberOfPurchases=" + numberOfPurchases +
                 '}';
     }
 
+    public void increaseNumberOfPurchases(){
+        numberOfPurchases = numberOfPurchases+1;
+    }
     public String getId() {
         return id;
     }
@@ -44,5 +49,8 @@ public class Customer {
 
     public String getAddress() {
         return address;
+    }
+    public int getNumberOfPurchases() {
+        return numberOfPurchases;
     }
 }
