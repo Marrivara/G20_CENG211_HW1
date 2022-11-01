@@ -75,8 +75,7 @@ public class SalesQuery {
    
    // Question 4: The total profit that is made from all sales
    public void totalProfit() {
-	   double totalProfit = 0;
-	   double a;
+	   long totalProfit = 0;
 	   
 	   for (int i = 0; i<3; i++) {
 		   for (int j=0; j<40; j++) {
@@ -85,7 +84,7 @@ public class SalesQuery {
 			   }
 			   // Profit = SalesPrice - Price
 			   totalProfit += salesManagement.getSales(i, j).getSalesPrice() - salesManagement.getSales(i, j).getProduct().getPrice();
-		  }
+		  } 
 	   }
 	   System.out.println(totalProfit + " TL");
    }
