@@ -9,31 +9,13 @@ public class SalesQuery {
    }
 
    public void calculateTheOutputs(){
-      System.out.println(calculateMaxNumberOfPurchase().toString());      // Question 3	
-      mostProfitableProduct(); 											  // Question 1 
+	  mostProfitableProduct();											  // Question 1
       mostExpensiveProduct();											  // Question 2
+      System.out.println(calculateMaxNumberOfPurchase().toString());      // Question 3	 											   
       totalProfit();													  // Question 4
       leastProfitS1();													  // Question 5
    }
    
-   // Question 3: The customer who purchases the most products
-   public Customer calculateMaxNumberOfPurchase(){
-      int max = 0;
-      Customer maxCustomer = null;
-      for(int i = 0; i<3; i++){
-         for (int j = 0; j<40;j++){
-            if(salesManagement.getSales(i,j) == null){
-               break;
-            }
-            if (salesManagement.getSales(i,j).getCustomer().getNumberOfPurchases()>max){
-               maxCustomer = salesManagement.getSales(i,j).getCustomer();
-            }
-
-         }
-      }
-      return maxCustomer;
-   }
-
    // Question 1: Most profitable product with data
    public void mostProfitableProduct() {
 	   double mostProfit = 0;
@@ -52,6 +34,7 @@ public class SalesQuery {
 	   }
 	   System.out.println(profProduct.toString() + " -> " + mostProfit + " TL profit");
    }
+
    
    // Question 2: Most expensive product with data
    
@@ -73,6 +56,25 @@ public class SalesQuery {
 	   System.out.println(mostExProduct.toString() + " -> with sales price " + mostExpensive + " TL");
    }
    
+   // Question 3: The customer who purchases the most products
+   public Customer calculateMaxNumberOfPurchase(){
+      int max = 0;
+      Customer maxCustomer = null;
+      for(int i = 0; i<3; i++){
+         for (int j = 0; j<40;j++){
+            if(salesManagement.getSales(i,j) == null){
+               break;
+            }
+            if (salesManagement.getSales(i,j).getCustomer().getNumberOfPurchases()>max){
+               maxCustomer = salesManagement.getSales(i,j).getCustomer();
+            }
+
+         }
+      }
+      return maxCustomer;
+   }
+
+
    // Question 4: The total profit that is made from all sales
    public void totalProfit() {
 	   long totalProfit = 0;
