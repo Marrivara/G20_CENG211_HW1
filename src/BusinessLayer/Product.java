@@ -17,9 +17,6 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
-    public String toStringForAppOutput() {
-    	return id+" "+title+" "+rate+" "+numberOfReviews+" "+price ;
-    }
     public Product(String id, String title, Double rate, int numberOfReviews, Double price) {
         this.id = id;
         this.title = title;
@@ -47,6 +44,7 @@ public class Product {
     public Double getPrice() {
         return price;
     }
-
-
+    public String toStringForAppOutput() {
+    	return id+" "+title+" "+rate+" "+numberOfReviews+" "+price ;
+    }
 }

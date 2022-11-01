@@ -27,10 +27,6 @@ public class Customer {
                 ", numberOfPurchases=" + numberOfPurchases +
                 '}';
     }
-    public String toStringForAppOutput() {
-    	return id+" "+name+" "+email+" "+country+" "+address ;
-    }
-
     public void increaseNumberOfPurchases(){
         numberOfPurchases = numberOfPurchases+1;
     }
@@ -56,4 +52,8 @@ public class Customer {
     public int getNumberOfPurchases() {
         return numberOfPurchases;
     }
+    public String toStringForAppOutput() {
+    	return id+" "+name+" "+email+" "+country+" "+address ;
+    }
+
 }

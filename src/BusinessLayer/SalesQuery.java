@@ -9,11 +9,11 @@ public class SalesQuery {
    }
 
    public void calculateTheOutputs(){
-	  mostProfitableProduct();											  // Question 1
-      mostExpensiveProduct();											  // Question 2
-      System.out.println(calculateMaxNumberOfPurchase().toString());      // Question 3	 											   
-      totalProfit();													  // Question 4
-      leastProfitS1();													  // Question 5
+	  mostProfitableProduct();											      // Question 1
+      mostExpensiveProduct();											      // Question 2
+      System.out.println(calculateMaxNumberOfPurchase().toString());          // Question 3	 											   
+      totalProfit();													      // Question 4
+      leastProfitS1();													      // Question 5
    }
 
    // Question 1: Most profitable product with data
@@ -32,7 +32,7 @@ public class SalesQuery {
 			   }
 		   }
 	   }
-	   System.out.println(profProduct.toStringForAppOutput()+ mostProfit + " TL profit");
+	   System.out.println(profProduct.toStringForAppOutput()+ " -> "+mostProfit + " TL profit.");
    }
 
    // Question 2: Most expensive product with data
@@ -52,7 +52,7 @@ public class SalesQuery {
 			   }
 		   }
 	   }
-	   System.out.println(mostExProduct.toStringForAppOutput() + " -> with sales price " + mostExpensive + " TL");
+	   System.out.println(mostExProduct.toStringForAppOutput() + " -> with sales price " + mostExpensive + " TL.");
    }
    
    // Question 3: The customer who purchases the most products
@@ -105,6 +105,6 @@ public class SalesQuery {
 			   leastProfProduct = salesManagement.getSales(0, i).getProduct();
 		   }
 	   }
-	   System.out.println(leastProfProduct.toStringForAppOutput() + " -> " + leastProfit + " TL profit");
+	   System.out.println(leastProfProduct.toStringForAppOutput() + " -> " + leastProfit + " TL profit.");
    }
 }
