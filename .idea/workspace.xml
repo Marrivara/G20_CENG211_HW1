@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fbafbd02-92f7-42ba-97da-080d53313fc6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusinessLayer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessLayer/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusinessLayer/DropShippingAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessLayer/DropShippingAppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusinessLayer/SalesManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessLayer/SalesManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BusinessLayer/SalesQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusinessLayer/SalesQuery.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,13 +25,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/berka/Downloads/First/G20_CENG211_HW1&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/berka/Downloads/En Son hali/G20_CENG211_HW1-master"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\berka\Downloads\First\G20_CENG211_HW1\src" />

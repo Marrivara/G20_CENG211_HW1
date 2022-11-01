@@ -13,8 +13,5 @@ public class DropShippingApp {
     public static void main(String[] args) {
         DropShippingAppInitializer appInitializer = new DropShippingAppInitializer();
         appInitializer.initializeTheApp();
-
-
     }
-
 }
