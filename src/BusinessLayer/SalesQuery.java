@@ -15,7 +15,7 @@ public class SalesQuery {
       totalProfit();													  // Question 4
       leastProfitS1();													  // Question 5
    }
-   
+
    // Question 1: Most profitable product with data
    public void mostProfitableProduct() {
 	   double mostProfit = 0;
@@ -32,10 +32,9 @@ public class SalesQuery {
 			   }
 		   }
 	   }
-	   System.out.println(profProduct.toString() + " -> " + mostProfit + " TL profit");
+	   System.out.println(profProduct.toStringForAppOutput()+ mostProfit + " TL profit");
    }
 
-   
    // Question 2: Most expensive product with data
    
    public void mostExpensiveProduct() {
@@ -53,11 +52,11 @@ public class SalesQuery {
 			   }
 		   }
 	   }
-	   System.out.println(mostExProduct.toString() + " -> with sales price " + mostExpensive + " TL");
+	   System.out.println(mostExProduct.toStringForAppOutput() + " -> with sales price " + mostExpensive + " TL");
    }
    
    // Question 3: The customer who purchases the most products
-   public Customer calculateMaxNumberOfPurchase(){
+   public String calculateMaxNumberOfPurchase(){
       int max = 0;
       Customer maxCustomer = null;
       for(int i = 0; i<3; i++){
@@ -68,12 +67,10 @@ public class SalesQuery {
             if (salesManagement.getSales(i,j).getCustomer().getNumberOfPurchases()>max){
                maxCustomer = salesManagement.getSales(i,j).getCustomer();
             }
-
          }
       }
-      return maxCustomer;
+      return maxCustomer.toStringForAppOutput()+" -> "+ maxCustomer.getNumberOfPurchases()+ " purchases.";
    }
-
 
    // Question 4: The total profit that is made from all sales
    public void totalProfit() {
@@ -88,11 +85,10 @@ public class SalesQuery {
 			   totalProfit += salesManagement.getSales(i, j).getSalesPrice() - salesManagement.getSales(i, j).getProduct().getPrice();
 		  } 
 	   }
-	   System.out.println(totalProfit + " TL");
+	   System.out.println("The profit from all sales made is "+totalProfit+ " TL.");
    }
    
    // Question 5: The least-profit product of S1
-   
    public void leastProfitS1() {
 	   
 	   // At first, we have to take a product to compare reference
@@ -109,6 +105,6 @@ public class SalesQuery {
 			   leastProfProduct = salesManagement.getSales(0, i).getProduct();
 		   }
 	   }
-	   System.out.println(leastProfProduct.toString() + " -> " + leastProfit + " TL profit");
+	   System.out.println(leastProfProduct.toStringForAppOutput() + " -> " + leastProfit + " TL profit");
    }
 }
